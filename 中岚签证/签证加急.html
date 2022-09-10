@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>签证加急</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		</link>
+		<link rel="stylesheet" href="./css/bootstrap-icons.css" type="text/css">
+		</link>
+		<link rel="stylesheet" type="text/css" href="js/layui.css" />
+		<!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- <script src="js/layui.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<script src="js/countUp.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/line.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<script>
+			$(function() {
+				var numOptions = {
+					useEasing: true, //是否使用动画曲线
+					useGrouping: true, //数字是否用separator隔开 
+					separator: ',', //数字用逗号隔开
+					decimal: '.', //小数点符号
+					prefix: '', //添加前缀
+					suffix: '' //添加后缀
+				}
+
+				new CountUp("num", 0, 18397, 0, 2.5, numOptions).start();
+				new CountUp("zhl", 38.8, 98.8, 1, 2.5, numOptions).start();
+				new CountUp("rs", 0, 3273, 0, 2.5, numOptions).start();
+				new CountUp("cgl", 0, 100, 0, 2.5, numOptions).start();
+			})
+		</script>
+		<style type="text/css">
+			.rt {
+				background-color: #FFFFFF;
+			}
+
+			.ty {
+				background-color: #e1e1e1;
+			}
+
+			.sj {
+				font-size: 80px;
+			}
+
+			/* .bt{
+					color: #0ba1e4;
+				} */
+			/* 	@media all and (max-width:576px) {
+					.ys{
+						width: 100%;
+						
+					}
+				} */
+			@media all and (min-width:768px) {
+				.mm:hover {
+					transform: scale(1.1);
+					background-color: #0ba1e4;
+					color: #FFFFFF;
+					box-shadow: 0 0 20px 0 rgb(45 183 245 / 50%);
+					transition: 0.6s;
+					z-index: 1;
+				}
+			}
+
+			.tp {
+				position: absolute;
+				top: -25px;
+				left: 40%;
+				width: 50px;
+				height: 50px;
+			}
+
+			.dt {
+
+				position: absolute;
+				left: 20px;
+				top: 70%;
+			}
+
+			.tq {
+				background-color: #666666;
+			}
+
+			/* @media all and (min-width:1500px) {
+					.ki{
+						position: fixed;
+						top: 0px;
+					}
+				} */
+			.contact-banner {
+				position: relative;
+				overflow: hidden;
+				padding: 0;
+				background: -webkit-linear-gradient(top, #0076d1, #5db8ff);
+			}
+
+			#num,
+			#zhl,
+			#rs,
+			#cgl {
+				color: #0076d1;
+			}
+
+			.tk {
+				width: 50%;
+			}
+			@media all and (max-width:768px) {
+				.fixed-top{
+					position: relative;
+				}
+				
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<!-- 头部 -->
+		<nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top "
+			style="background-color: #FFFFFF;opacity: 0.9;border-bottom: 3px solid #0ba1e4;">
+			<div class="container-fluid">
+				<a class="mr-5" href="index.html"><img src="img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item ml-4">
+							<a class="nav-link text-info" href="#">首页</a>
+						</li>
+						<li class="nav-item ml-4">
+							<a class="nav-link " href="#">签证指南</a>
+						</li>
+						<li class="nav-item ml-4">
+							<a class="nav-link" href="#">签证加急</a>
+						</li>
+						<li class="nav-item ml-4">
+							<a class="nav-link" href="#"> 签证服务</a>
+						</li>
+						<li class="nav-item ml-4">
+							<a class="nav-link" href="#">签证咨询</a>
+						</li>
+						<li class="nav-item ml-4">
+							<a class="nav-link" href="#">资料下载</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 轮播 -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/banner1.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner2.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+				data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+				data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</button>
+		</div>
+
+		<!-- 面馆 -->
+		<div class="container-fluid p-5" style="background-color: #f8fbff;">
+			<div class="row">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-8">
+							<div class="w-75">
+							<h2 class="text-primary text-left py-3">2-3天进馆面签</h2>
+							<p class="layui-font-20 text-secondary pr-3">无论官方排期是一个月还是两个月, 找我们加急, 最快第二天 ,第三天即可进馆面谈.</p>
+							</div>
+						</div>
+						<div class="col-4 px-4"><img src="img/sellpoint1.png" class="img-fluid"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid p-5" style="background-color: #f8fbff;">
+			<div class="row">
+				<div class="col-12">
+					<div class="row w-50">
+						<div class="col-4 px-4"><img src="img/sellpoint2.png" class="img-fluid"></div>
+						<div class="col-8 mx-auto">
+							<h2 class="text-primary text-right py-3">多年渠道 保证成功</h2>
+							<p class="layui-font-20 text-secondary pl-3 text-right ">2011年开通加急服务至今, 多年从未间断,
+								您只需要任意指定二至三个有效工作日备选, 百分百加急成功.</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="container-fluid p-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center align-items-center tk mx-auto">
+						<div class="px-4"><img src="img/sellpoint2.png" style="width: 100%;"></div>
+						<div class="col-auto">
+							<h2 class="text-primary text-right py-3">多年渠道 保证成功</h2>
+							<p class="layui-font-20 text-secondary pl-3 text-right ">2011年开通加急服务至今, 多年从未间断,
+								您只需要任意指定二至三个有效工作日备选, 百分百加急成功.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="container-fluid p-5" style="background-color: #f8fbff;">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center align-items-center tk mx-auto">
+
+						<div>
+							<h2 class="text-primary text-left py-3">先加急 后付费</h2>
+							<p class="layui-font-20 text-secondary pl-3 text-left">先安排加急, 加急成功后可官方查询,
+								核实各项信息真实准确之后再支付服务费用, 安全放心.</p>
+						</div>
+						<div class="px-4"><img src="img/sellpoint3.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center align-items-center tk mx-auto">
+						<div class="px-4"><img src="img/sellpoint4.png"></div>
+						<div>
+							<h2 class="text-primary text-right py-3">专人审核 双重保障</h2>
+							<p class="layui-font-20 text-secondary pl-3 text-right">在材料提交加急之前, 专人核对关键信息, 确保各项信息(如护照号,
+								姓名, DS160确认码等)准确无误, 为顺利进馆面签双重保险.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="container-fluid p-5" style="background-color: #f8fbff;">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center align-items-center tk mx-auto">
+
+						<div>
+							<h2 class="text-primary text-left py-3">五大领区 所有签证类型</h2>
+							<p class="layui-font-20 text-secondary">北京, 上海, 广州, 沈阳, 成都五大领区均可办理加急. B1/B2商务旅游, F1留学,
+								J1交流访问, C1过境等都可办理加急.</p>
+						</div>
+						<div class="px-3"><img src="img/sellpoint5.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center align-items-center tk mx-auto">
+						<div class="p-4"><img src="img/sellpoint6.png"></div>
+						<div>
+							<h2 class="text-primary text-left py-3 text-right">简单材料 无需邮寄</h2>
+							<p class="layui-font-20 text-secondary text-right">仅需提供电子版本材料用于核对和申请加急, 无需邮寄任何原件, 方便快捷.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 签证流程 -->
+		<div class="container-fluid p-4" style="background-color: #0ba1e4;">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center">
+						<p style="color: #FFFFFF;font-size: 21px;">签证流程: 填写DS160表>>>缴纳签证费>>>预约面谈时间>>>进馆面谈>>>取护照</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- 加急流程 -->
+
+		<div class="container-fluid" style="background-image: url(img/urgent_chat.jpg);">
+			<div class="row">
+				<div class="col-12">
+					<div class="mx-auto justify-content-center tk">
+						<div>
+							<h1 class="pt-5 pb-3">加急流程</h1>
+							<p class="py-3 layui-font-20">还未填表缴费的申请人请直接咨询客服</p>
+							<ol>
+								<li class="p-2 layui-font-18">1.提供护照首页扫描件和DS160确认页</li>
+								<li class="p-2 layui-font-18">2.与客服预订期望面谈的日期</li>
+								<li class="p-2 layui-font-18">3.我方上报加急, 申请人准备面谈材料</li>
+								<li class="p-2 layui-font-18">4.加急成功, 回传预约确认单</li>
+								<li class="p-2 layui-font-18">5.申请人核实无误后付款</li>
+							</ol>
+							<p class="pb-5 pt-3"><button type="button" class="btn btn-primary btn-lg">在线咨询</button>
+								<button type="button" class="btn btn-outline-secondary btn-lg">QQ咨询</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 客户的鼓励 -->
+		<div class="container-fluid text-center ty">
+			<h3 class="pt-5">客户的鼓励</h3>
+			<hr style="width: 70px;border-color:#0ba1e4;margin: 0px auto;padding: 10px;">
+			<p class="text-secondary layui-font-18 mb-3 p-5">帮助您解决实际问题，顺利、及时地获得签证，是我们存在的根本价值。</p>
+			<div class="row w-50 mx-auto pb-5">
+				<div class="col-12 col-md-4 mb-5 border border-success px-0 rounded">
+					<div class="p-4">
+						<img src="img/pingjia1.jpg" class="rounded-circle tp">
+						<p class="text-left mt-3">护照丢了，定了春节行程。11号补好护照约了13号面签，这速度简直惊人，所有的旅行社都说弄不了，来不及了，肯定没戏。多亏了你们，非常感谢
+						</p>
+						<input type="text" value="B1商务签证"
+							class="bg bg-secondary border-0 text-light text-center p-1 my-3 dt" size="7" />
+						<span class="d-inline-block mt-3 position-absolute text-secondary"
+							style="left: 70%;font-size: 12px;top: 75%;"><i class="bi bi-geo-alt"></i>北京领事馆</span>
+						<i class="bi bi-chat-square-quote"
+							style="font-size: 60px;position: absolute;top: 200px;left:35%;"></i>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 p-0 border border-success rounded">
+					<div class="p-4">
+						<img src="img/pingjia2.jpg" class="rounded-circle tp">
+						<p class="text-left mt-3 mb-4">
+							因为我情况很特殊也很难办，白本加多次拒签。感谢你们为我做详细的分析与方案，这次签证终于过了！本来都做好心理准备再拒我就彻底放弃的。谢谢你们！</p>
+						<input type="text" value="B2旅游签证"
+							class="bg bg-secondary border-0 text-light text-center p-1 my-3 dt" size="7" />
+						<span class="d-inline-block mt-3 position-absolute text-secondary"
+							style="left: 70%;font-size: 12px;top: 75%;"><i class="bi bi-geo-alt"></i>广州领事馆</span>
+						<i class="bi bi-chat-square-quote"
+							style="font-size: 60px;position: absolute;top: 200px;left:35%;"></i>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 p-0 border border-success rounded">
+					<div class="p-4">
+						<img src="img/pingjia3.jpg" class="rounded-circle tp">
+						<p class="text-left mt-3 mb-4">
+							同学推荐过来的，马上就要开学了，加上去年成绩不并理想。多亏你们帮我插队面签，分析面签问题，非常专业。现在签证已经拿到了，我会再介绍同学来。
+						</p>
+						<input type="text" value="F1留学签证"
+							class="bg bg-secondary border-0 text-light text-center p-1 dt position-absolute" size="7"
+							style="top:80%;" />
+						<span class="d-inline-block mt-3 position-absolute text-secondary"
+							style="left: 70%;font-size: 12px;top: 75%;"><i class="bi bi-geo-alt"></i>上海领事馆</span>
+						<i class="bi bi-chat-square-quote"
+							style="font-size: 60px;position: absolute;top: 200px;left:35%;"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 签证咨询 -->
+		<div class="container-fluid text-center">
+			<h3 class="pt-5">美国签证最新资讯</h3>
+			<hr style="width: 70px;border-color:#0ba1e4;margin: 0px auto;padding: 10px;">
+			<p class="text-secondary layui-font-18 mb-3 p-3">中岚签证帮您关注最新美国签证相关政策与新闻。</p>
+			<div class="row w-50 mx-auto ys">
+				<div class="col-12 col-md-6 rt mb-3">
+					<div class="float-left">
+						<img src="img/meeting.jpg" style="width: 130px;height: 100px;"
+							class="rounded border img-thumbnail">
+					</div>
+					<div style="height: 130px;overflow: hidden;" class="ml-2">
+						<h4 class=" d-block"><a href="#" class="text-primary">92名中国民工被欠薪受困塞班岛 华裔中介扣钱逃匿</a></h4>
+						<p class="text-secondary">时间：2017-05-09</p>
+						<p class="layui-font-12 text-secondary">
+							他们大部分来自东北，在去年10月份时，其所在城市的劳务中介公司找到他们，介绍了塞班岛的工作，中介给他们开出每天工作8小时日薪300元、如果加班每1小时50元的待遇。民工称他们当时也没
+						</p>
+						<p>作者：中岚签证 clantrip.com<span class="">[详细]</span></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 rt mb-3">
+					<div class="btn-outline-info">
+						<img src="img/book.png" style="width: 130px;height: 100px;float: left;" class="rounded border">
+						<p class="pl-2 layui-font-18 text-left"><a href="#" class="text-primary">2017年赴美签证新规定</a></p>
+						<p class="text-left p-1 text-secondary">时间：2017-05-08</p>
+						<p class="text-left layui-font-12 text-secondary">
+							美国国务院领事事务局2016年10月6日公告，自2016年11月1日开始，申请美国护照或签证，要使用没有戴眼镜的</p>
+						<p class="text-left">作者：中岚签证 clantrip.com<span class="">[详细]</span></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 rt mb-3">
+					<div class="btn-outline-info">
+						<img src="img/signed.jpg" style="width: 130px;height: 100px;float: left;"
+							class="rounded border img-thumbnail">
+						<p class="layui-font-18">美国有多少人缴纳个人所得税及其它</p>
+						<p class="text-left text-secondary">时间：2017-05-08</p>
+						<p class="text-left layui-font-12 text-secondary">
+							前几天我们有一篇博文介绍了美国个人所得税税率，不少网友提出许多有关美国个税税收的问题，这里就集中回答。由于个税牵涉到联邦所得税以及 </p>
+						<p class="text-left">作者：中岚签证 clantrip.com<span class="">[详细]</span></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 rt mb-3">
+					<div class="btn-outline-info">
+						<img src="img/sea.jpg" style="width: 130px;height: 100px;float: left;"
+							class="rounded border img-thumbnail">
+						<p class="layui-font-16">多国签证利好频出，带火春节出境游</p>
+						<p class="text-left p-1 text-secondary">时间：2017-04-15</p>
+						<p class="text-secondary text-left layui-font-12 text-secondary">
+							近一两个月来，澳大利亚、马来西亚、以色列、阿联酋、塞尔维亚、泰国等国纷纷对中国公民捧出签证利好，加上春节临近，大为提振了南京市民的旅游热情。记者从旅游市场上获悉，春节期间</p>
+						<p class="text-left">作者：中岚签证 clantrip.com<span class="">[详细]</span></p>
+					</div>
+				</div>
+			</div>
+			<p class="p-5"><a href="#" class="layui-font-20">更多资讯>>></a></p>
+		</div>
+
+		<!-- 我们的客户 -->
+		<div class="container-fluid text-center ty">
+			<h3 class="pt-5">我们的客户</h3>
+			<hr style="width: 70px;border-color:#0ba1e4;margin: 0px auto;padding: 10px;">
+			<p class="text-secondary layui-font-18 mb-3 p-5">他们与中岚建立了合作关系</p>
+			<div class="row w-50 mx-auto ty px-0">
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client1.png" style="width: 130px;height: 62px;" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client10.png" style="width:130px;height:62px;" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client11.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client12.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client2.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client3.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+			</div>
+			<div class="row w-50 mx-auto p-0">
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client4.png" style="width: 130px;height: 62px;" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client5.png" style="width:130px;height:62px;" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client6.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client7.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client8.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+				<div class="col-4 col-md-2 rt mb-5 ty">
+					<img src="img/client9.png" style="width:130px;height:62px" class="border border-secondary">
+				</div>
+			</div>
+		</div>
+
+		<!-- 解答 -->
+		<div class="contact-banner" style="height: 222px; overflow: hidden;">
+			<canvas id="waves" class="waves position-absolute"></canvas>
+			<div class="container-fluid text-center">
+				<h3 class="pt-5 text-light">更多疑问 全面解答</h3>
+				<hr size="3" style="width: 270px;margin: 0px auto;padding: 10px;">
+				<p class="text-light layui-font-18 mb-3 p-2">资深美签专家在线为您解答所有疑惑</p>
+				<p><button type="button" class="btn btn-outline-info mb-3 btn-lg">免费咨询</button></p>
+
+			</div>
+		</div>
+		<!-- 常用工具 -->
+		<div class="container-fluid text-center bg bg-dark">
+			<div class="row w-50 mx-auto pt-3">
+				<div class="col-6 col-md-2 rt mb-3 bg bg-dark" style="border-left: 2px solid #FFFFFF;">
+					<p class="text-light p-2 text-left" style="font-size: 18px;margin-top: 40px;margin-bottom: 20px;">
+						常用工具</p>
+					<p class="p-2 text-left"><a href="#" class="text-light">电码查询</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">护照追踪</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">资料下载</a></p>
+				</div>
+				<div class="col-6 col-md-2 rt mb-3 bg bg-dark" style="border-left: 2px solid #FFFFFF;">
+					<p class="text-light p-2 text-left" style="font-size: 18px;margin-top: 40px;margin-bottom: 20px;">
+						快捷裢接</p>
+					<p class="p-2 text-left"><a href="#" class="text-light">签证咨询</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">签证指南</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">常见问题</a></p>
+				</div>
+				<div class="col-6 col-md-2 rt mb-3 bg bg-dark" style="border-left: 2px solid #FFFFFF;">
+					<p class="text-light p-2 text-left" style="font-size: 18px;margin-top: 40px;margin-bottom: 20px;">
+						关于我们</p>
+					<p class="p-2 text-left"><a href="#" class="text-light">关于中岚</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">服务协议</a></p>
+					<p class="p-2 text-left"><a href="#" class="text-light">收藏本站</a></p>
+				</div>
+				<div class="col-6 col-md-2 rt mb-3 bg bg-dark pt-5" style="border-left: 2px solid #FFFFFF;">
+					<img src="img/wechat.png" style="width: 130px;height: 130px;">
+					<p class="p-2 text-light">微信号:jhjy2012</p>
+				</div>
+				<div class="col-6 col-md-4 rt mb-3 bg bg-dark pt-5"
+					style="border-left: 2px solid #FFFFFF;border-right: 2px solid #FFFFFF;">
+					<h2 class="py-2"><img src="img/pc-footer-phone.png" style="width:40px;height:40px;"><span
+							class="ml-2 text-light">18810888729</span></h2>
+					<h2 class="py-2"><img src="./img/pc-footer-mob.png" style="width:40px;height:40px;"><span
+							class="ml-2 text-light">54350970&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+					<h2 class="py-2"><img src="img/pc-footer-qq.png" style="width:40px;height:40px"><span
+							class="ml-2 text-light">18810888729</span></h2>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 页脚 -->
+		<div class="container-fluid text-center tq">
+			<p class="text-light p-3">Copyright © 2006-2019 clantrip.com All Rights Reversed. 中岚签证 京ICP备16015317号-1</p>
+			<p class="p-4"><a href="#" class="text-light text-decoration-none"><img
+						src="img/ghs.png">京公网安备11010102002687号</a></p>
+		</div>
+		</div>
+	</body>
+</html>
